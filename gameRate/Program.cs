@@ -12,9 +12,9 @@ namespace gameRate
             string studentName2 = "oh";
             float winRate2 = 70.11f;
 
-            Console.WriteLine("{0} {1}\n", "name", "win Rate");
-            Console.WriteLine("{0} {1}", studentName1, winRate1);
-            Console.WriteLine("{0} {1}", studentName2, winRate2);
+            Console.WriteLine("{0,10} {1,15}\n", "name", "win Rate");
+            Console.WriteLine("{0,10} {1,15}", studentName1, winRate1);
+            Console.WriteLine("{0,10} {1,15}", studentName2, winRate2);
         }
     }
 }

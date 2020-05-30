@@ -28,6 +28,7 @@ namespace gameRate
             Console.WriteLine("{0:x}", 10); //소문자
             Console.WriteLine("{0:X}", 10); //대문자
             Console.WriteLine("{0:X4}", 10);    //10진수를 16진수로 출력하기, 16진수는 9부터 a로 시작한다
+                                                // @는 escape문 모든걸 무시
 
         }
     }

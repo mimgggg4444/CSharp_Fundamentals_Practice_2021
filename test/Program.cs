@@ -2,25 +2,23 @@
 
 public class Program
 {
-	public static void Main()
+	static void Main(string[]args)
 	{
-		int num = 10;
+		Console.Write("Enter the first number: ");
+		int num1 = int.Parse(Console.ReadLine());
+		Console.Write("Enter the second number: ");
+		int num2 = int.Parse(Console.ReadLine());
 
-		if (3 * 6 != 18 || ++num == 11)
-		{
-			num++;
-		}
-		// 12
-		if (12 + 2 == 14 && num++ == 11)
-		{
-			num++;
-		}
-		// 12
-		if (1 * 4 == 4 || num++ > 0)
-		{
-			num++;
-		}
-		//14
-		Console.WriteLine(num);
+		int max;
+		if(num1 > num2)
+        {
+			max = num1;
+        }
+		else
+        {
+			max = num2;
+        }
+
+		Console.WriteLine(max);
 	}
 }

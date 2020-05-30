@@ -23,11 +23,11 @@ namespace CalculatorTwo
             {
                 Console.WriteLine($"{num1} - {num2} = {num1 - num2}");
             }
-            else if(op == "*")
+            else if (op == "*")
             {
                 Console.WriteLine($"{num1} * {num2} = {num1 * num2}");
             }
-            else if(op == "/")
+            else if (op == "/")
             {
                 Console.WriteLine($"{num1} / {num2} = {num1 / num2}");
             }

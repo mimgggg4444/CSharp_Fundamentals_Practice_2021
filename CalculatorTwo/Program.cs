@@ -15,17 +15,23 @@ namespace CalculatorTwo
             Console.Write("Enter an operator: ");
             string op = Console.ReadLine();
 
-            if(op=="+")
+            if (op == "+")
             {
                 Console.WriteLine($"{num1} + {num2} = {num1 + num2}");
             }
-
-            else
+            else if (op == "-")
             {
-                Console.WriteLine("wrong operator");
+                Console.WriteLine($"{num1} - {num2} = {num1 - num2}");
+            }
+            else if(op == "*")
+            {
+                Console.WriteLine($"{num1} * {num2} = {num1 * num2}");
+            }
+            else if(op == "/")
+            {
+                Console.WriteLine($"{num1} / {num2} = {num1 / num2}");
             }
 
-            Console.WriteLine("End");
         }
     }
 }

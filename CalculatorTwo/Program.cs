@@ -22,10 +22,10 @@ namespace CalculatorTwo
 
             else
             {
-                Console.WriteLine($"wrong operator");
+                Console.WriteLine("wrong operator");
             }
 
-            Console.WriteLine($"End");
+            Console.WriteLine("End");
         }
     }
 }

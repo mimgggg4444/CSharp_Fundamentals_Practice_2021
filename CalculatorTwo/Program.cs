@@ -31,6 +31,10 @@ namespace CalculatorTwo
             {
                 Console.WriteLine($"{num1} / {num2} = {num1 / num2}");
             }
+            else
+            {
+                Console.WriteLine($"You entered a wrong operator: {op}");
+            }
 
         }
     }

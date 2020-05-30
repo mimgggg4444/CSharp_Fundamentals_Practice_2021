@@ -1,20 +1,26 @@
 ﻿using System;
 
-namespace test
+public class Program
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            int num1 = 10;
-            int num2 = 20;
+	public static void Main()
+	{
+		int num = 10;
 
-            if(num1 == 10 || ++num2 == 20)
-            {
-                ++num1;
-            }
-
-            Console.WriteLine($"{num1} {num2}");
-        }
-    }
+		if (3 * 6 != 18 || ++num == 11)
+		{
+			num++;
+		}
+		// 12
+		if (12 + 2 == 14 && num++ == 11)
+		{
+			num++;
+		}
+		// 12
+		if (1 * 4 == 4 || num++ > 0)
+		{
+			num++;
+		}
+		//14
+		Console.WriteLine(num);
+	}
 }

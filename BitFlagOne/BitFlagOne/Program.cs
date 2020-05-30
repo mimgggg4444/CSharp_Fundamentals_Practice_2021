@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BitFlag
+namespace BitFlagOne
 {
     class Program
     {
@@ -31,7 +31,7 @@ namespace BitFlag
             Console.WriteLine("bitFlags: " + Convert.ToString(bitFlags, 2).PadLeft(BIT_FLAG_SIZE, '0'));
 
             char char1 = 'A';
-            int result1 = char1 | ' ';
+            int result1 = char1 | ' '; // spacebar is 32
 
             Console.WriteLine("result1: " + (char)result1);
 

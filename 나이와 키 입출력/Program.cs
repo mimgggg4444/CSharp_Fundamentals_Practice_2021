@@ -9,7 +9,7 @@ namespace 나이와_키_입출력
             Console.Write("Enter the first user's age: ");
             int age1 = int.Parse(Console.ReadLine());
             Console.Write("Enter the first user's height(cm): ");
-            float height1 = float.Parse(Console.ReadLine());
+            float height1 = float.Parse(Console.ReadLine()); 
 
             Console.Write("Enter the second user's age: ");
             int age2 = int.Parse(Console.ReadLine());

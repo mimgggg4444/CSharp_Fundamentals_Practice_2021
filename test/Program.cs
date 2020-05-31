@@ -4,21 +4,19 @@ public class Program
 {
 	static void Main(string[]args)
 	{
-		Console.Write("Enter the first number: ");
-		int num1 = int.Parse(Console.ReadLine());
-		Console.Write("Enter the second number: ");
-		int num2 = int.Parse(Console.ReadLine());
+		Console.WriteLine("Please select a menu");
+		Console.WriteLine("1. Cheese burger");
+		Console.WriteLine("2. Double cheese burger");
+		Console.WriteLine("3. Veggie burger");
+		Console.WriteLine("4. Cheese & mushromm burger");
 
-		int max;
-		if(num1 > num2)
-        {
-			max = num1;
-        }
-		else
-        {
-			max = num2;
-        }
+		int menu = int.Parse(Console.ReadLine());
 
-		Console.WriteLine(max);
+		switch(menu)
+        {
+			case 1:
+				Console.WriteLine("Price:3$");
+				break;
+        }
 	}
 }

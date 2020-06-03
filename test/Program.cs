@@ -1,16 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
 
-public class Program
+namespace RecursiveFactorial
 {
-	static void Main(string[]args)
-	{
-		char[] myName = new char[4];
-
-		myName[0] = 'L';
-		myName[1] = 'u';
-		myName[2] = 'n';
-		myName[3] = 'a';
-
-		Console.WriteLine($"My name is {myName[0]}{myName[1]}{myName[2]}{myName[3]}");
-	}
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            Dictionary<string, string> students = new Dictionary<string, string>();
+            bool bSuccess1 = students.TryAdd("A10000000", "Lulu");
+        }
+    }
 }

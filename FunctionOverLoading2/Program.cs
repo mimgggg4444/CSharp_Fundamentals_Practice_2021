@@ -1,23 +1,53 @@
 ﻿using System;
+using System.ComponentModel.Design;
 
-namespace FunctionOverLoading2
+namespace  OutParameterModifier
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[]args)
         {
-            Foo();
-            Foo(100);
+
+            Console.WriteLine("Enter \"true\" or \"false\": ");
+            string booleanString = Console.ReadLine();
+
+            bool b;
+            if(bool.TryParse(booleanString, out b))
+            {
+                Console.WriteLine($"Successfully parsed: {b}");
+            }
+            else
+            {
+                Console.WriteLine("Cannot be  parsed to boolean");
+            }
+
+            Console.WriteLine("Enter an integer: ");
+            string intString = Console.ReadLine();
+
+            int number;
+            if(int.TryParse(intString, out number))
+            {
+                Console.WriteLine($"Successfully parsed: {number}");
+            }
+            else
+            {
+                Console.WriteLine("Cannot be parsed to integer");
+            }
+
+            int someNumber = 5;
+
+            int randomNumber;
+            if(TryGetIntegerGreaterThan(someNumber, out randomNumber))
+            {
+                Console.WriteLine($"Failed to get an integer greater than {someNumber}");
+            }
         }
 
-        static void Foo()
+        static bool TryGetIntegerGreaterThan(int input, out int output)
         {
-            Console.WriteLine("Foo with no arguments.");
-        }
-
-        static void Foo(int x)
-        {
-            Console.WriteLine($"Foo with {typeof(int).Name}: {x} as an argument."); //위와 비교해서 같은 이름의 함수이나 type가 다르기 때문에 int x 를 출력 할 수 있는 것을 알 수 있다. (type int의 이름을 알 수 있다.)
+            var random = new Random();
+            output = random.Next(0, 10);
+            return output > input;
         }
     }
 }

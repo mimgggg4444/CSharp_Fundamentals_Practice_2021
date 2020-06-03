@@ -1,21 +1,20 @@
-﻿using Microsoft.VisualBasic.CompilerServices;
-using System;
+﻿using System;
 
-namespace FunctionOverloading
+namespace FunctionOverLoading
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[]args)
         {
             Foo();
             Foo(10);
             Foo("POCU");
-            Foo("POCU", "COMP1500", "Intro to programming!");
+            Foo("FOCU", "COMP1500", "Intro to programming!");
         }
 
         static void Foo()
         {
-            Console.WriteLine("Foo with no arguments");
+            Console.WriteLine("Foo with no arguments.");
         }
 
         static void Foo(int x)
@@ -25,12 +24,12 @@ namespace FunctionOverloading
 
         static void Foo(string s)
         {
-            Console.WriteLine($"Foo with {typeof(string).Name}: {s} as an argument.");
+            Console.WriteLine($"Foo with{typeof(string).Name}: {s} as an argument.");
         }
 
         static void Foo(string s1, string s2, string s3)
         {
-            Console.WriteLine($"Foo with {typeof(string).Name}: {s1}, {typeof(string).Name}: {s2} and {typeof(string).Name}: {s3}");
+            Console.WriteLine($"Foo with{typeof(string).Name}: {s1}, {typeof(string).Name}: {s2} and {typeof(string).Name}: {s3} as an argument.");
         }
     }
 }

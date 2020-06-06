@@ -6,9 +6,14 @@ namespace test
     {
         static void Main(string[]args)
         {
-            long byte1 = long.MaxValue;
 
-            Console.WriteLine(Convert.ToString(byte1, 2));
+            int num1 = 0;
+            int num2 = 10;
+
+            int result = num1-- + num1-- - --num2;
+            Console.WriteLine(num1);
+            Console.WriteLine(num2);
+            Console.WriteLine(result);
         }
     }
 }

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "while 반복문을 이용한 나이와 키의 총합", "while 반복문을 이용한 나이와 키의 총합.csproj", "{00655074-855E-487C-A38C-7DB0106B0A7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00655074-855E-487C-A38C-7DB0106B0A7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00655074-855E-487C-A38C-7DB0106B0A7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00655074-855E-487C-A38C-7DB0106B0A7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00655074-855E-487C-A38C-7DB0106B0A7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68408B79-F944-46BB-8EF8-75BF13E6736E}
+	EndGlobalSection
+EndGlobal

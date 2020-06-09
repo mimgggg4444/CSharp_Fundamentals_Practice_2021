@@ -56,6 +56,7 @@ namespace TheFunction
                     scores[index] = double.Parse(Console.ReadLine());
                     average = Average(Sum(scores), scores.Length);
                     PrintAverage(average, scores.Length);
+
                 }
             }
         }

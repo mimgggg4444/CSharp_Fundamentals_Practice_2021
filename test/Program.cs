@@ -1,13 +1,21 @@
 ﻿using System;
 
-namespace test
+public class Program
 {
-    class Program
+    public static void Main()
     {
-        static void Main(string[]args)
+        uint sum = 0;
+
+        while (true)
         {
+            if (sum >= 10)
+            {
+                break;
+            }
 
+            sum += uint.Parse(Console.ReadLine());
+        }
 
-            Console.WriteLine(double.Parse(10 / 20));
+        Console.WriteLine(sum);
     }
 }

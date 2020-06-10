@@ -3,18 +3,21 @@
 public class Program
 {
 
-
     static double Square(double number)
     {
-        return number * number;
+        number *= number;
+        return number;
     }
-
-    static void Main(string[] args)
+    #region Hi!
+    static void Main(string[]args)
     {
-        double input = 3.14;
-        double input1 = Square(input);
-        Console.WriteLine(input1);
-        Console.WriteLine(input);
-
+        double number = 5;
+        //double result = Square(number);
+        Console.WriteLine(number);
+        Console.WriteLine(Square(number));
     }
+    #endregion
+
+
+
 }

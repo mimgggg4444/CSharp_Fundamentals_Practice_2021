@@ -2,20 +2,19 @@
 
 public class Program
 {
-    public static void Main()
+
+
+    static double Square(double number)
     {
-        uint sum = 0;
+        return number * number;
+    }
 
-        while (true)
-        {
-            if (sum >= 10)
-            {
-                break;
-            }
+    static void Main(string[] args)
+    {
+        double input = 3.14;
+        double input1 = Square(input);
+        Console.WriteLine(input1);
+        Console.WriteLine(input);
 
-            sum += uint.Parse(Console.ReadLine());
-        }
-
-        Console.WriteLine(sum);
     }
 }

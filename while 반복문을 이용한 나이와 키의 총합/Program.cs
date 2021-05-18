@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace while_반복문을_이용한_나이와_키의_총합
+namespace total_age_and_height_using_while
 {
     class Program
     {
